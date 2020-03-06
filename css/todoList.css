@@ -1,0 +1,73 @@
+.containerToDo{
+    display: flex;
+    justify-content: center;
+    
+}
+.menuList{
+    width: 800px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    left: 0;
+	bottom: 60px;
+    position: fixed;
+    margin-left: 50%;
+    transform: translate(-50%)
+}
+.inputList{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 15px 0 0 15px;
+    padding-left: 15px;
+   border-right-color: white;
+    
+}
+#btn-add{
+    width: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0 15px 15px 0;    
+}
+#outList{
+    width: 90%;
+    height: auto;
+    padding: 15px;
+}
+.task{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Neucha', cursive;
+}
+.valueOut{
+    width: 90%;
+    word-break: break-all;
+}
+.editBtn{
+      width: 20px;
+    height: auto;
+    position:absolute;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.deleteBtn{
+    width: 20px;
+    height: auto;
+    position:absolute;
+    right: -10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-edit, .fa-times-circle{
+    color: cadetblue;
+
+}

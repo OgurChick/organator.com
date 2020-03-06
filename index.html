@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/burgerMenu.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/sizeofdick.css" type="text/css">
+    <link rel="stylesheet" href="css/todoList.css" type="text/css">
+    <link rel="stylesheet" href="css/user.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Title</title>
+
+</head>
+<body>
+<script src="js/onload.js">
+
+</script>
+
+<!--
+<div class="preloader">
+    <div class="container1">
+        <div class="circle"></div>
+    </div>
+    <div class="container1">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+</div>
+-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      
+	        <h4 class="modal-title">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <input type="text" class="form-control input-task-edit" placeholder="Enter">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary save-changes" data-dismiss="modal">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+<div id="main">
+
+    <!-- dick size block-->
+       <div class="contentSlides ">
+        <div class="slideDick">
+        <div class="input">0</div>
+        <div class="button" onclick="return randomNumber()">Нажми</div>
+        </div>
+
+    </div>
+
+    
+    
+    <!-- to do list block -->
+    <div class="contentSlides ">
+    <div class="containerToDo">
+     <div id="outList">
+     </div>
+     </div>
+     <div class="menuList">
+         
+         <input class="inputList" type="text" placeholder = "Новая запись...">
+         <div id="btn-add"><i class="fas fa-plus"></i></div>
+     </div>
+
+        </div>
+
+    
+    <div class="contentSlides "><div class="beta">beta test</div></div>
+    
+    
+    
+    <!-- user block -->
+    <div class="contentSlides ">
+       <div class="formUser">
+       <h1 id="nameUser">User</h1>
+       
+        <img src="#" alt="" class="userIcon">
+        <div class="enigma">Введите ваше имя</div>
+        <input id="inUserName" type="text"  placeholder ="Your name">
+           <div id="alertsName">Не меньше 1 символа и не больше 11!</div>
+           <button id="acceptName" onclick="acceptUser()"> Accept</button>
+        <img src="#" alt="" class="userHex">
+        <div class="enigma">Настройки цвета кнопок</div>
+        <input id="inUserColor" type="text"  placeholder ="Copy your color in HEX">
+        
+        <button id="accept" onclick="acceptColor()"> Accept</button>
+
+          <div class="enigma"> Или используйте готовые цветовые палитри</div>
+           <div class="colorPalette">
+               <li class="colorBtn" onclick="changeColor(1)"></li>
+               <li class="colorBtn" onclick="changeColor(2)"></li>
+               <li class="colorBtn" onclick="changeColor(3)"></li>
+               <li class="colorBtn" onclick="changeColor(4)"></li>
+               <li class="colorBtn" onclick="changeColor(5)"></li>
+           </div>
+    </div>
+    </div>
+    </div>
+    <div id="header">
+                <nav class="menu">
+                <div class="menuSlides" onclick="currentSlide(1)"><img src="https://img.icons8.com/wired/35/000000/penis.png"></div>
+                <div class="menuSlides" onclick="currentSlide(2)"><img src="https://img.icons8.com/metro/30/000000/todo-list.png"></div>
+                <div class="menuSlides" onclick="currentSlide(3)"><img src="https://img.icons8.com/ios/35/000000/t.png"></div>
+                <div class="menuSlides" onclick="currentSlide(4)"><img src="https://img.icons8.com/ios-filled/35/000000/user-male.png"></div>
+            </nav>
+
+    </div>
+
+<script src="js/header.js"></script>
+<script src="js/content.js"></script>
+<script src="js/sizeofdick.js"></script>
+<script src="js/todolist.js"></script>
+<script src="js/user.js"></script>
+
+</body>
+</html>
